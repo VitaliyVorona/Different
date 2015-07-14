@@ -27,7 +27,7 @@ public class Utilities {
      return list;
  }
 
- public static void intgereSorter(){
+ public static void integerSorter(List<Integer> list){
 
  }
 
