@@ -15,11 +15,17 @@ import java.util.List;
 */
 
 public class Main {
-    public static void main(String[] args) {
-        List list = new ArrayList<Integer>();
-        list = (Utilities.getInputListValues("3"));
-        for (int i = 0; i < list.size(); i++){
-            System.out.println(list.get(i));
-        }
+    public static void main(String[] args) throws InterruptedException {
+        /*List list = new ArrayList<Integer>();
+        List listOdd = new ArrayList<Integer>();
+        List listEven = new ArrayList<Integer>();
+        List listAll = new ArrayList<Integer>();
+        list = (Utilities.getInputListValues("5"));
+
+        Utilities.integerSorter(list, listOdd, listEven, listAll);
+        Utilities.printList(listOdd, listEven, listAll);*/
+        Utilities utilities = new Utilities();
+        utilities.reverseCount();
+
     }
 }
