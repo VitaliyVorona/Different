@@ -1,5 +1,6 @@
 package exercises.collections;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,17 +16,17 @@ import java.util.List;
 */
 
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
-        /*List list = new ArrayList<Integer>();
-        List listOdd = new ArrayList<Integer>();
-        List listEven = new ArrayList<Integer>();
-        List listAll = new ArrayList<Integer>();
-        list = (Utilities.getInputListValues("5"));
+    public static void main(String[] args) throws InterruptedException, IOException {
 
-        Utilities.integerSorter(list, listOdd, listEven, listAll);
-        Utilities.printList(listOdd, listEven, listAll);*/
-        Utilities utilities = new Utilities();
-        utilities.reverseCount();
-
+        int[] array = Arrays.getArrayFrom1to10();
+        int[] array2 = Arrays.getArrayFrom1to10();
+        int[] array3 = Arrays.getArrayFrom0to9();
+        int[] array4 = Arrays.getArrayFrom9to0();
+        String[] words = Arrays.getArrayWith10WordsFromKeyboard();
+        for (int i = 0; i < array.length; i++){
+//            System.out.println(array[i] + " array from 1 to 10");
+//            System.out.println(array2[i] + " array from 10 to 1");
+            System.out.println(words[i] + " array words");
+        }
     }
 }
